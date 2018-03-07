@@ -3,10 +3,7 @@ if('ontouchend' in window) {
     bttnAction = 'touchend';
 }
 
-const videoController = function(action, parent) {
-    action = (typeof action === 'undefined') ? null : action;
-    parent = (typeof parent === 'undefined') ? 'body' : parent;
-
+const videoController = function(action = null, parent = 'body') {
     if(action == 'pause'){
         $(parent).find('video').each(function(){
             $(this)[0].pause();
