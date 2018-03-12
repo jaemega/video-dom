@@ -15,7 +15,7 @@ const videoController = function(action = null, parent = 'body') {
                 $(this)[0].controls = false;    //remove controls if present
 
                 let vid = $(this).attr('id');
-                let activeVid = `# ${vid}`;
+                let activeVid = `#${vid}`;
 
                 //Create psuedo poster image for pause state
                 $(window).load(function(){      //Action implemented after window load to ensure mobile Safari loads the correct offSet information
